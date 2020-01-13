@@ -1,6 +1,6 @@
 {% set name = "persim" %}
-{% set version = "0.1.0" %}
-{% set sha256 = "b5517edb38e5aae61afea95a7fb127eaa905ffc4499cc179f7895775b90247ca" %}
+{% set version = "0.1.2" %}
+{% set sha256 = "564cc46f595dde7478511b1c268dc44c219dcee28b49222f79b09eac12d1e66f" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 build:
   noarch: python
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
