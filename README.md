@@ -5,7 +5,7 @@ Home: http://github.com/scikit-tda/persim
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: Distances and representations of persistence diagrams
 
