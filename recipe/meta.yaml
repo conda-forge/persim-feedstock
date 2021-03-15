@@ -17,9 +17,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
+    - python >=3.6
     - scikit-learn
     - numpy
     - matplotlib-base
