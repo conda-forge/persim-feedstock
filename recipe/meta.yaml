@@ -26,6 +26,8 @@ requirements:
     - matplotlib-base
     - scipy
     - hopcroftkarp
+    - deprecated
+    - joblib
 
 test:
   imports:
