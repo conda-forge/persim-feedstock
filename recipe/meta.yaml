@@ -1,6 +1,6 @@
 {% set name = "persim" %}
-{% set version = "0.3.3" %}
-{% set sha256 = "1ba23ba4b0ac6e7fe9bde683cb87ad7ef6b143a18cd543dc0e29dc9f9b3fd43a" %}
+{% set version = "0.3.4" %}
+{% set sha256 = "2c2a43d44f8373ebc13c2dd9ef7f45d817d5dc8283e3b9a418b432315cb17593" %}
 
 package:
   name: {{ name|lower }}
