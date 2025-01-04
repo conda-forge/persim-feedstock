@@ -7,20 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
   noarch: python
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
+    - setuptools
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - scikit-learn
     - numpy
     - matplotlib-base
@@ -30,6 +31,8 @@ requirements:
     - joblib
 
 test:
+  requires:
+    - python {{ python_min }}
   imports:
     - persim
 
@@ -42,7 +45,7 @@ about:
 
   description: |
     Persim is a Python package for many tools used in analyzing Persistence Diagrams. It currently houses implementations of Persistence Images, Bottleneck distance, Sliced Wasserstein Kernel, Heat Kernel, and Diagram plotting
-  doc_url: http://persim.scikit-tda.org/
+  doc_url: https://persim.scikit-tda.org/
   dev_url: https://github.com/scikit-tda/persim
 
 extra:
