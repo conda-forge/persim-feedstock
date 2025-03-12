@@ -11,7 +11,7 @@ Summary: Distances and representations of persistence diagrams
 
 Development: https://github.com/scikit-tda/persim
 
-Documentation: http://persim.scikit-tda.org/
+Documentation: https://persim.scikit-tda.org/
 
 Persim is a Python package for many tools used in analyzing Persistence Diagrams. It currently houses implementations of Persistence Images, Bottleneck distance, Sliced Wasserstein Kernel, Heat Kernel, and Diagram plotting
 
