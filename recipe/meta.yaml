@@ -1,13 +1,13 @@
 {% set name = "persim" %}
-{% set version = "0.3.8" %}
-{% set sha256 = "e13d18584176b8a764d16d7e56df08dcc8ba66c6b3257a072345be3bd59ba40d" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "d44d19c18699165c5deb5225200207f6282fbf1efb90c8dab84574ef5d24f806" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
